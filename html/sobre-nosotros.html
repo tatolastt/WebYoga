@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nosotros</title>
 
+    <!-- style -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/yoga-logo.jpg" type="image/x-icon">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- animationsyle -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
@@ -30,7 +40,7 @@
 
     <section>
         <div class="principalPagSec">
-          <h1>Sobre nosotros</h1>
+          <h1 class="animate__animated animate__zoomInDown" >Sobre nosotros</h1>
         </div>
   
         <!-- <div class="whatsapp">
@@ -45,35 +55,49 @@
 
             <div class="contenedorGrid">
                 <div class="profesor">
-                    <img src="../img/avatar.png" alt="Perfil del profesor">
+                    <div data-aos="zoom-in">
+                        <img src="../img/avatar.png" alt="Perfil del profesor">
+                    </div>
+                    
                     <h3>Karina Criado</h3>
                     <p>Directora de la Escuela y maestra de yoga, pilates, meditación, etc</p>
                 </div>
                 <div class="profesor">
-                    <img src="../img/avatar.png" alt="Perfil del profesor">
+                    <div data-aos="zoom-in">
+                        <img src="../img/avatar.png" alt="Perfil del profesor">
+                    </div>
                     <h3>Eduardo Cortese</h3>
                     <p>Profesor de yoga, meditación y kundalini </p>
                 </div>
     
                 <div class="profesor">
-                    <img src="../img/avatar.png" alt="Perfil del profesor">
+
+                    <div data-aos="zoom-in">
+                        <img src="../img/avatar.png" alt="Perfil del profesor">
+                    </div>
                     <h3>Karina Silveira</h3>
                     <p>Profesora de ashtanga Yoga</p>
     
                 </div>
                 <div class="profesor">
-                    <img src="../img/avatar.png" alt="Perfil del profesor">
+                    <div data-aos="zoom-in">
+                        <img src="../img/avatar.png" alt="Perfil del profesor">
+                    </div>
                     <h3>Virginia Gomez</h3>
                     <p>Profesora de yoga integral</p>
                 </div>
                 <div class="profesor">
-                    <img src="../img/avatar.png" alt="Perfil del profesor">
+                    <div data-aos="zoom-in">
+                        <img src="../img/avatar.png" alt="Perfil del profesor">
+                    </div>
                     <h3>Sandra Latronico</h3>
                     <p>Profesora de yoga integral</p>
                 </div>
 
                 <div class="profesor">
-                    <img src="../img/avatar.png" alt="Perfil del profesor">
+                    <div data-aos="zoom-in">
+                        <img src="../img/avatar.png" alt="Perfil del profesor">
+                    </div>
                     <h3>Profesor de prueba</h3>
                     <p>Profesora de prueba asd asd</p>
                 </div>
@@ -92,5 +116,10 @@
     <footer> 
         <h3>Derechos reservados por Valentin Marino</h3>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
