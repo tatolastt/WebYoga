@@ -10,6 +10,12 @@
 
     <!-- favicon -->
     <link rel="shortcut icon" href="img/yoga-logo.jpg" type="image/x-icon">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- animationsyle -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
@@ -30,8 +36,8 @@
 
     <section>
         <div class="principal">
-            <h1>Yoga Del Angel</h1>
-            <h2> Somos una escuela de yoga, dedicamos nuestro tiempo a formar nuevos profesores y enseñar esta hermosa filosofia a todos los que quieran practicarla</h2>
+            <h1 class="animate__animated animate__zoomInDown" >Yoga Del Angel</h1>
+            <h2 class="animate__animated animate__zoomIn"> Somos una escuela de yoga, dedicamos nuestro tiempo a formar nuevos profesores y enseñar esta hermosa filosofia a todos los que quieran practicarla</h2>
 
         </div>
 
@@ -50,7 +56,9 @@
             
             <div class="gridMainPadre">
                 <div class="cajaUnoGrid">
-                    <div>
+                    <div class="imagenGrid" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <img src="img/profesorado-yoga.jpg" alt="profesores">
                     </div>
                     <div class="textoGrid">
@@ -61,7 +69,9 @@
                 </div>
     
                 <div class="cajaDosGrid">
-                    <div>
+                    <div class="imagenGrid" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <img src="img/yoga-imagen.jpg" alt="Imagen de yoga">
                     </div>
                     <div class="textoGrid">
@@ -77,23 +87,36 @@
         <div class=parteDos>
             <h2> ARANCELES </h2>
             <div class="contenedorFlex">
-                <div class="caja">
+                <div class="caja" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="200"
+                data-aos-offset="0">
                     <p> Clases de prueba o suelta $1000.</p>
                 </div>
-                <div class="caja">
+                <div class="caja" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0">
                     <p> 1 vez por semana $2700.</p>
                 </div>
-                <div class="caja">
+                <div class="caja" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="400"
+                data-aos-offset="0">
                     <p> 2 veces por semana $3800.</p>
                 </div>
-                <div class="caja">
+                <div class="caja" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="500"
+                data-aos-offset="0">
                     <p> 3 veces por semana $4500.</p>
                 </div>
-                <div class="caja">
+                <div class="caja" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="600"
+                data-aos-offset="0">
                     <p> 4 veces por semana $5200.</p>
                 </div>
-            </div>
-            
         </div>
     </main>
 
@@ -101,5 +124,9 @@
         <h3>Derechos reservados por Valentin Marino</h3>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
