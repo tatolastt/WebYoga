@@ -1,0 +1,34 @@
+.contenedorGrid{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 50px;
+    background-color: #F8BBD0;
+}
+
+
+.profesor{
+    padding: 30px;
+    text-align: center;
+    img{
+        width: 50%;
+        border-radius: 170px;
+    }
+
+
+}
+
+@media (max-width: 800px){
+
+    .contenedorGrid{
+        grid-template-columns: repeat(2,auto);
+        gap: 50px;
+    }
+
+}
+
+@media (max-width: 440px){
+    .contenedorGrid{
+        grid-template-columns: auto;
+    }
+
+}
