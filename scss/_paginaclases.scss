@@ -1,14 +1,4 @@
-.videoClases{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    iframe{
-        padding-bottom: 50px;
-        width: 70%;
-        height: 500px;
-    }
-}
+
 
 @media (max-width:440px){
     .videoClases iframe{
