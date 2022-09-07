@@ -1,0 +1,24 @@
+/* MAPS */
+$Color-principal: #ebc0cf;
+$color-secundario: #efb3c8;
+$mapCajas:(parteUno:$Color-principal, parteDos:$color-secundario);
+$tamaños:(titulos:70px, subtitulos:50px, footer:10px);
+
+@each $caja, $color in $mapCajas {
+    .#{$caja}{
+        background-color:$color;
+    }
+}
+
+footer{
+    font-size: map-get($tamaños, footer);
+}
+
+h1{
+    font-size: map-get($tamaños, titulos);
+}
+
+h2{
+    font-size: map-get($tamaños, subtitulos);
+}
+
