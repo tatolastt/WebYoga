@@ -6,7 +6,32 @@
   font-family: 'Mochiy Pop One', sans-serif; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  width: 100%; }
+
+header {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center; }
+
+.logo {
+  display: flex;
+  padding-left: 5px; }
+  .logo img {
+    height: 60px; }
+
+header nav ul li {
+  list-style-type: none;
+  display: inline; }
+
+.enlaces {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif; }
 
 /* titulo pagina */
 .principal {
@@ -167,20 +192,35 @@ footer {
   .cajaDosGrid {
     grid-template-areas: "imagen" "texto";
     gap: 0px;
-    padding-bottom: 100px; } }
+    padding-bottom: 100px; }
+  header {
+    flex-direction: column;
+    height: 290px; }
+    header nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      header nav ul li {
+        padding: 5px; }
+  .logo {
+    padding-top: 5px;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    left: 17px; } }
 
 @media (max-width: 524px) {
   .caja {
     width: 200px;
     height: 200px; }
   .principal h1 {
-    right: 120px;
-    font-size: 60px; }
-  .principal h2 {
+    text-align: center;
+    font-size: 40px; }
+  .principal p {
     display: block;
     width: 200px;
-    font-size: 12px;
-    right: 120px; }
+    font-size: 11px; }
   .parteUno h2 {
     font-size: 30px; }
   .parteDos h2 {
@@ -378,3 +418,7 @@ h2 {
     padding-bottom: 50px;
     width: 70%;
     height: 500px; }
+
+.conten {
+  max-width: 90rem;
+  margin: 0 auto; }
